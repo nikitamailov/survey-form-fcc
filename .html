@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1 id="title">Customer Feedback Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve</i></p>
+    <!--method="post" action="url"-->
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" name="name" required /></label>
+      <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" name="email" required /></label>
+      <label id="number-label" for="number">Age (Optional)<input id="number" type="number" min="10" max="120" placeholder="Age" name="number" /></label>
+      <label id="dropdown-label" for="dropdown">How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Facebook</option>
+          <option value="2">Referral from a friend/family</option>
+          <option value="3">Referral from a local business</option>
+          <option value="4">Flyer</option>
+          <option value="5">Website</option>
+          <option value="6">Company's representative</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset class="second">
+      <legend>Please rate your experience</legend>
+      <label for="good"><input class="inline" id="good" type="radio" name="rate-us" value="good" checked />Good</label>
+      <label for="meh-ok"><input class="inline" id="meh-ok" type="radio" name="rate-us" value="meh-ok" />Meh...ok</label>
+      <label for="not-good"><input class="inline" id="not-good" type="radio" name="rate-us" value="not-good" />Not good</label>
+      <label for="omg-terrible"><input class="inline" id="omg-terrible" type="radio" name="rate-us" value="OMG-terrible" />OMG, terrible</label>
+    </fieldset>
+    <fieldset>
+      <legend>Will you use our services again?</legend>
+      <label for="use-again-yes"><input class="inline" id="use-again-yes" type="radio" name="use-again" value="yes" checked />Yes</label>
+      <label for="use-again-no"><input class="inline" id="use-again-no" type="radio" name="use-again" value="no" />No</label>
+    </fieldset>
+    <fieldset>
+      <legend>What do you often need a professional assistants with? (Check all that apply)</legend>
+      <label for="network"><input class="inline" id="network" type="checkbox" name="network" value="network">Network (Internet and Wi-Fi)</label>
+      <label for="gadgets"><input class="inline" id="gadgets" type="checkbox" name="gadgets" value="gadgets">Smartphone and/or tablet</label>
+      <label for="smart-home"><input class="inline" id="smart-home" type="checkbox" name="smart-home" value="smart-home">Smart home devices</label>
+    </fieldset>
+    <fieldset>
+      <legend>Feedback</legend>
+      <textarea id="feedback" name="feedback" rows="8" cols="30" placeholder="Feel free to leave any feedback here"></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </fieldset>
+    </form>
+  </main>
+</body>  
+</html>
