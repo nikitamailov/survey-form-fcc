@@ -1,69 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.0rem;
-    color: #ffffff;
-    margin: 1.5rem auto;
-    background-image: url(https://images.unsplash.com/photo-1592441975174-595b836d8f7f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
-  }
-  
-main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0rem;
+  color: #ffffff;
+  margin: 1.5rem auto;
+  background-image: url(https://images.unsplash.com/photo-1592441975174-595b836d8f7f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+p,
+h1 {
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  margin-top: -1rem;
+  margin-bottom: 1rem;;
+}
+
+form {
   min-width: 300px;
   max-width: 900px;
+  width: 45vw;
   margin: 0 auto;
+  background-color: #060644;
+  opacity: 0.85;
+  color: #ffffff;
+  padding: 1.5rem;
 }
 
-  p, h1 {
-    text-align: center;
-    margin-bottom: 1rem;
+@media (max-width: 900px) {
+  body {
+    font-size: 0.8rem;
   }
-  
-  form {
-    width: 45vw;
-    margin: 0 auto;
-    background-color: #060644;
-    opacity: 0.85;
-    color: #ffffff;
-    padding: 1.5rem;
-  }
-  
-  @media (max-width: 900px) {
-    body {
-      font-size: 0.9rem;
-    }
-  }
-
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-label input {
-  margin-top: 0.2rem;
 }
 
-  input, select, textarea {
-    width: 100%;
-  }
-  
-  input, select {
-    min-height: 3vh;
-  }
-  
-  .inline {
-    width: unset;
-    vertical-align: middle;
-    margin: 0 0.5rem 0 0;
-  }
-  
-  fieldset {
-    border: none;
-    margin-top: 0.5 rem;
-  }
-  
-  input[type="submit"] {
-    margin-top: 1.5rem;
-    color: #ffffff;
-    background-color:green;
-    border: green;
-    height: 5.5vh;
-  } 
+label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.one label {
+  margin-top: 0.7rem;
+  padding-top: 0.3rem;
+}
+
+.one input {
+  margin-top: 0.7rem;
+}
+
+.one select {
+  margin-top: 0.7rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+input,
+select {
+  min-height: 3.5vh;
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0 0.5rem 0 0;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+legend {
+  margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+  margin: 1.4rem auto;
+  text-align: center;
+  color: #ffffff;
+  background-color: green;
+  border: green;
+  height: 5vh;
+  min-width: 100px;
+  width: 40vw;
+  display: block;
+}
