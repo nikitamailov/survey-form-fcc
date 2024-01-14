@@ -30,6 +30,7 @@ form {
   opacity: 0.85;
   color: #ffffff;
   padding: 1.5rem;
+  border-radius: 0.4rem;
 }
 
 @media (max-width: 900px) {
@@ -92,4 +93,5 @@ input[type="submit"] {
   min-width: 100px;
   width: 40vw;
   display: block;
+  border-radius: 0.2rem;
 }
