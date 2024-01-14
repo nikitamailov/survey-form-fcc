@@ -63,6 +63,10 @@ textarea {
   width: 100%;
 }
 
+textarea {
+  resize: vertical;
+}
+
 input,
 select {
   min-height: 3.5vh;
@@ -84,14 +88,13 @@ legend {
 }
 
 input[type="submit"] {
+  display: block;
   margin: 1.4rem auto;
   text-align: center;
   color: #ffffff;
   background-color: green;
   border: green;
   height: 5vh;
-  min-width: 100px;
-  width: 40vw;
-  display: block;
+  width: 95%;
   border-radius: 0.2rem;
 }
